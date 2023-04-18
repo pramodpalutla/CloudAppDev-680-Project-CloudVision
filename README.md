@@ -18,7 +18,7 @@
     - Trigger: Cloud Storage
     - Event Type: Finalize/Create
     - Bucket: <your bucket name>
-    - Source code: Copy and paste the code for the imgProc function from the project repository (https://github.com/saipalutla/gcp-image-processing/blob/main/functions/index.js)
+    - Source code: Copy and paste the code for the imgProc function from the project repository [vision.py](vision.py)
     - Add the following to requirements.txt file
         - `google-cloud-vision==2.6.1`
         - `google-cloud-storage==1.42.2`
@@ -28,7 +28,7 @@
     - Trigger: Cloud Storage
     - Event Type: HTTP
     - Allow Unauthenticated Invocations
-    - Source code: Copy and paste the code for the imgProc function from the project repository (https://github.com/saipalutla/gcp-image-processing/blob/main/functions/index.js)
+    - Source code: Copy and paste the code for the imgProc function from the project repository [vision_rest.py](vision_rest.py)
     - Add the following to requirements.txt file
         - `google-cloud-vision==2.6.1`
         - `google-cloud-storage==1.42.2`
