@@ -11,6 +11,13 @@
     - Cloud Vision API
 3. Create a new project in the Firebase Console and enable Firebase Realtime Database API
 4. Set up a Firebase Realtime Database and note the database URL and secret key. You will need these later to authenticate with the database.
+5. Follow these steps to generate Firebase service account credentials JSON file.
+    - Go to the Firebase Console and select your project.
+    - Click on the gear icon in the top left corner to open the project settings.
+    - Select the "Service Accounts" tab.
+    - Click on the "Generate New Private Key" button to download the JSON file containing your credentials.
+    - Save the JSON file securely on your local machine.
+    - In your Cloud Functions code, use the Firebase Admin SDK to initialize with your service account credentials.
 5. Set up a Cloud Storage bucket to store the uploaded images. Note the bucket name and location.
 6. Set up a Cloud Storage bucket to store the json data of the images. Note the bucket name and location.
 7. Create a new Cloud Function with the following settings:
