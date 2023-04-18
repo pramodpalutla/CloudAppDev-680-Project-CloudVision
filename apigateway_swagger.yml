@@ -1,0 +1,94 @@
+swagger: '2.0'
+info:
+  title: Detect Face API
+  description: API for detecting faces in images
+  version: '1.0'
+# host: ${HOSTNAME}
+# basePath: /v1
+schemes:
+  - https
+paths:
+  /detect-face:
+    post:
+      summary: Detect face in an image
+      operationId: detect-face
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      x-google-backend:
+        address:  https://us-central1-cis680-project.cloudfunctions.net/imgProcImgUrl
+      parameters:
+        - name: image
+          in: body
+          required: true
+          schema:
+            type: object
+            properties:
+              image:
+                type: string
+                format: byte
+      responses:
+        '200':
+          description: OK
+          schema:
+            type: array
+            items:
+              type: object
+              properties:
+                bounding_poly:
+                  type: object
+                  properties:
+                    vertices:
+                      type: array
+                      items:
+                        type: object
+                        properties:
+                          x:
+                            type: integer
+                          y:
+                            type: integer
+                landmarks:
+                  type: array
+                  items:
+                    type: object
+                    properties:
+                      type:
+                        type: string
+                      position:
+                        type: object
+                        properties:
+                          x:
+                            type: integer
+                          y:
+                            type: integer
+                          z:
+                            type: integer
+                roll_angle:
+                  type: number
+                pan_angle:
+                  type: number
+                tilt_angle:
+                  type: number
+                detection_confidence:
+                  type: number
+                joy_likelihood:
+                  type: string
+                sorrow_likelihood:
+                  type: string
+                anger_likelihood:
+                  type: string
+                surprise_likelihood:
+                  type: string
+                under_exposed_likelihood:
+                  type: string
+                blurred_likelihood:
+                  type: string
+                headwear_likelihood:
+                  type: string
+                landmarking_confidence:
+                  type: number
+        '400':
+          description: Bad Request
+        '500':
+          description: Internal Server Error
