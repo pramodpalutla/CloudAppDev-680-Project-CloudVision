@@ -1,6 +1,9 @@
 # SAI PALUTLA
 # CloudVision-CIS680-Project
 
+> Demo Video
+>> [![](https://markdown-videos.deta/youtube/KWXMnNukZBg)](https://youtu.be/KWXMnNukZBg)
+
 > Prerequisites - This guide assumes you have prior experience setting up projects using the technologies involved.
 ## To recreate this project in Google Cloud, follow these steps:
 
@@ -26,6 +29,7 @@
     - Event Type: Finalize/Create
     - Bucket: <your bucket name>
     - Source code: Copy and paste the code for the imgProc function from the project repository [vision.py](vision.py)
+    - Update the bucket names in the code to match the name of the buckets created
     - Add the following to requirements.txt file
         - `google-cloud-vision==2.6.1`
         - `google-cloud-storage==1.42.2`
@@ -36,6 +40,7 @@
     - Event Type: HTTP
     - Allow Unauthenticated Invocations
     - Source code: Copy and paste the code for the imgProc function from the project repository [vision_rest.py](vision_rest.py)
+    - Update the bucket names in the code to match the name of the buckets created
     - Add the following to requirements.txt file
         - `google-cloud-vision==2.6.1`
         - `google-cloud-storage==1.42.2`
