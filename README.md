@@ -4,7 +4,12 @@
 > Demo Video
 >> [![](https://markdown-videos.deta.dev/youtube/KWXMnNukZBg)](https://youtu.be/KWXMnNukZBg)
 
-> Prerequisites - This guide assumes you have prior experience setting up projects using the technologies involved.
+> Prerequisites - This guide assumes you have prior experience setting up projects using the following Google Cloud products:
+> 1. Cloud Vision
+> 2. Cloud Functions
+> 3. Cloud Storage
+> 4. Firebase Realtime Database
+> 5. Cloud API Gateway
 ## To recreate this project in Google Cloud, follow these steps:
 
 1. Create a new project in the Google Cloud Console.
