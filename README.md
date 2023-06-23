@@ -2,7 +2,7 @@
 # CloudVision-CIS680-Project
 
 > Demo Video
->> [![](https://markdown-videos.deta.dev/youtube/KWXMnNukZBg)](https://youtu.be/KWXMnNukZBg)
+>> [![](https://img.youtube.com/vi/KWXMnNukZBg/0.jpg)](https://youtu.be/KWXMnNukZBg)
 
 > Prerequisites - This guide assumes you have prior experience setting up projects using the following Google Cloud products:
 > 1. Cloud Vision
